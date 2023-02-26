@@ -90,6 +90,7 @@ public class StudentRecord {
 
                 FileWriter writer = new FileWriter(fileName, true);
                 writer.write(studentRecord.toString() + "\n");
+                writer.write("the Final term grade is: " + studentRecord.getFinalTermGrade() + "\n");
                 writer.close();
 
                 System.out.println("Final term grade: " + studentRecord.getFinalTermGrade());
